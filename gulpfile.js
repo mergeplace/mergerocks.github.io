@@ -49,7 +49,7 @@ gulp.task('deploy', function () {
     gulp.src([
             options.dist + '**/*'
         ], { base: options.dist })
-        .pipe(gulp.dest('../merge.place.web/'));
+        .pipe(gulp.dest('../merge.rocks.web/'));
 });
 
 /* HTML */
