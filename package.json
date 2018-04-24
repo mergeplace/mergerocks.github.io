@@ -1,0 +1,41 @@
+{
+  "name": "merge.rocks",
+  "version": "0.0.1",
+  "description": "Merge Rocks landing page",
+  "main": "index.himl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "gunnzolder@gmail.com",
+  "license": "ISC",
+  "homepage": "http://merge.place",
+  "devDependencies": {
+    "ampify": "^0.2.6",
+    "animate.scss": "0.0.6",
+    "autoprefixer-core": "^5.2.1",
+    "bootstrap": "^4.1.0",
+    "csswring": "^3.0.5",
+    "gulp": "npm ^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-dest": "^0.2.2",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-postcss": "^5.1.10",
+    "gulp-sass": "^2.0.4",
+    "html-to-amp": "^2.0.2",
+    "jquery": "^3.1.1",
+    "opn": "^4.0.2",
+    "popper.js": "^1.14.3"
+  },
+  "dependencies": {
+    "atbmarket": "^1.0.3",
+    "font-awesome": "^4.4.0",
+    "jquery-countdown": "git+https://github.com/hilios/jQuery.countdown.git",
+    "yargs": "^11.0.0"
+  }
+}
