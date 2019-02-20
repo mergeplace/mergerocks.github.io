@@ -1,0 +1,110 @@
+@import "_base/imports/bootstrap";
+@import "_base/variables/variables";
+@import "_base/mixins/mixins";
+@import '_base/base';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$block-name: "merge";
+
+.#{$block-name} {
+
+  font-family: $base-font;
+  color: $color-white;
+
+  &__wrap {
+    background-color: $color-black;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    padding: 50px 40px;
+  }
+  &__container {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  &__container-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &__logo {
+    fill: $color-merge-cyan;
+    width: 32px;
+    height: 40px;
+  }
+
+  &__logo-letters {
+    width: 118px;
+    margin-bottom: 50px;
+  }
+  &__hr {
+    align-self: flex-start;
+    text-align: center;
+    width: 40px;
+    border: 0;
+    background-color: white;
+    display: inline-block;
+    height: 2px;
+    margin: 0 0 12px 0;
+  }
+
+  &__excerpt {
+    font-family: $base-font;
+    color: $color-white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: none;
+    line-height: 20px;
+    margin: 0 0 30px;
+    max-width: 250px;
+    &--dark {
+      margin: 0;
+    }
+  }
+  &__button-pdf {
+    @extend %button;
+  }
+
+  &__link {
+    font-size: 14px;
+    &:link, &:visited {
+      font-family: $base-font;
+      color: $color-merge-cyan;
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+      border:1px solid $color-merge-cyan;
+    }
+  }
+}
+
+@media (min-width: breakpoint-min(lg)) {
+  .#{$block-name} {
+    &__container {
+      padding-left: 28%;
+      justify-content: center;
+    }
+    &__container-inner {
+      margin-bottom: 220px;
+    }
+    &__logo-letters {
+      width: auto;
+    }
+    &__logo {
+      margin-bottom: 100px;
+    }
+  }
+}

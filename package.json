@@ -1,40 +1,37 @@
 {
-  "name": "merge.rocks",
-  "version": "0.0.1",
-  "description": "Merge Rocks landing page",
-  "main": "index.himl",
+  "name": "gulp.text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "build": "gulp build"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "gunnzolder@gmail.com",
+  "author": "",
   "license": "ISC",
-  "homepage": "http://merge.place",
   "devDependencies": {
-    "ampify": "^0.2.6",
-    "animate.scss": "0.0.6",
-    "autoprefixer-core": "^5.2.1",
-    "bootstrap": "^4.1.0",
-    "csswring": "^3.0.5",
-    "gulp": "npm ^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^5.0.0",
-    "gulp-consolidate": "^0.1.2",
-    "gulp-dest": "^0.2.2",
-    "gulp-minify-css": "^1.2.1",
-    "gulp-postcss": "^5.1.10",
-    "gulp-sass": "^3.0.0",
-    "html-to-amp": "^2.0.2",
-    "jquery": "^3.1.1",
-    "opn": "^4.0.2",
-    "popper.js": "^1.14.3"
-  },
-  "dependencies": {
-    "atbmarket": "^1.0.3",
-    "font-awesome": "^4.4.0",
-    "yargs": "^11.0.0"
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-using": "^0.1.1",
+    "node-sass": "^4.11.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1"
   }
 }
