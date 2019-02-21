@@ -24,6 +24,7 @@ const path = {
   build: 'dist',
   root: './',
   maps: './maps',
+  prod: '../merge.rocks.web/'
 }
 const input = {
   scss: `${path.src}/scss/**/*.scss`,
@@ -195,3 +196,15 @@ task('serve', series('compile', 'serve:start'));
 task('build', series('clean', parallel('compile:html', 'build:fonts', 'build:js', 'build:style', 'compile:images')));
 
 task('default', series('clean', 'serve'));
+
+
+// Deploy to the production
+
+task('compile:js', (done) => {
+
+  src([
+          path.build + '**/*'
+      ], { base: path.build })
+      .pipe(dest(path.prod));
+      done();
+});
