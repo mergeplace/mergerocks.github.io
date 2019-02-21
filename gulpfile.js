@@ -200,7 +200,7 @@ task('default', series('clean', 'serve'));
 
 // Deploy to the production
 
-task('compile:js', (done) => {
+task('deploy', (done) => {
 
   src([
           path.build + '**/*'
